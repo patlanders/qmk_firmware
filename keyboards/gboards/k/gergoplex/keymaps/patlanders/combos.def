@@ -5,4 +5,4 @@
 // QMK wide includes
 
 // User includes
-#include "pat-combos.def"
+#include "combos/pat-combos.def"
