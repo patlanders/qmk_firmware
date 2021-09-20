@@ -2,8 +2,8 @@
 
 COMB(kmRet,	 KC_ENT,          KC_K, KC_M)
 COMB(gpQues,     KC_QUES,          KC_G, KC_P)
-COMB(mkExlm,     KC_EXLM,         KC_M, KC_K)
-COMB(dfTab,      KC_TAB,          KC_DOT, KC_P)
+COMB(huExlm,     KC_EXLM,         KC_H, KC_U)
+COMB(dotPTab,      KC_TAB,          KC_DOT, KC_P)
 COMB(hgCol,      KC_COLN,         KC_H, KC_G)
 COMB(hmScln,     KC_SCLN,         KC_H, KC_M)
 COMB(mwvUnd,     KC_UNDS,         KC_M, KC_W, KC_V)
