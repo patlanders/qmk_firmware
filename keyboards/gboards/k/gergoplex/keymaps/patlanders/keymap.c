@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [BASE] = LAYOUT_gergoplex(
     KC_QUOTE,  			 			 KC_COMMA, KC_DOT, KC_P, KC_Y,  	KC_F, KC_G, KC_C,    KC_R, 	 KC_L, 
-    MT(MOD_LCTL, KC_A),KC_O, KC_E, KC_U, KC_I,  	KC_D, KC_H, KC_H,    KC_T, 	 MT(MOD_LCTL, KC_S),
+    MT(MOD_LCTL, KC_A),KC_O, KC_E, KC_U, KC_I,  	KC_D, KC_H, KC_T,    KC_N, 	 MT(MOD_LCTL, KC_S),
     MT(MOD_LSFT, KC_SCLN),KC_Q, KC_J, KC_K, KC_X,  	KC_B, KC_M, KC_W, KC_V, MT(MOD_RSFT, KC_Z),
 
     MT(MOD_LGUI, KC_ESC), LT(NUMB, KC_SPC), KC_DEL,									// Left
