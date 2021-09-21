@@ -1,4 +1,3 @@
-
 /* Good on you for modifying your layout! if you don't have
  * time to read the QMK docs, a list of keycodes can be found at
  *

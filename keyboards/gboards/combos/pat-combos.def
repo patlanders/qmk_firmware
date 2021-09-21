@@ -7,5 +7,6 @@ COMB(dotPTab,      KC_TAB,          KC_DOT, KC_P)
 COMB(hgCol,      KC_COLN,         KC_H, KC_G)
 COMB(hmScln,     KC_SCLN,         KC_H, KC_M)
 COMB(mwvUnd,     KC_UNDS,         KC_M, KC_W, KC_V)
+COMB(htnDash,    KC_MINS,         KC_H, KC_T, KC_N)
 COMB(hnEnt,      KC_ENT,          KC_H, KC_N)
  
