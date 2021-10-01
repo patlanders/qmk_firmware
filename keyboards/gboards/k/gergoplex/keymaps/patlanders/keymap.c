@@ -60,27 +60,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Keymap 1: Symbols layer
  * ,------------------------------.      ,--------------------------------.
- * |  !  |  @  |  {  |  }  |      |      | `   |  ~  |     |     |    \   |
+ * |  !  |  @  |  {  |  }  |  |   |      | `   |  ~  |     |  |  |    \   |
  * |-----+-----+-----+-----+------|      |--------------------------------|
  * |  #  |  $  |  (  |  )  |  LMB |      |  +  |  -  |  /  |  *  |    '   |
  * |-----+-----+-----+-----+------+      |--------------------------------|
  * |  %  |  ^  |  [  |  ]  |  RMB |      |  &  |  =  |  ,  |  .  |   -    |
  * `------+-----+-----+------+----'      `--------------------------------'
  *          .------------------.           .------------------.
- *          |MMB | FUNC |  =   |           |  =  |  ;  |  DEL |
+ *          |MMB | FUNC | BASE |           |  =  |  ;  |  DEL |
  *          '------------------'           '------------------'
  */
 [SYMB] = LAYOUT_gergoplex(
-    KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,   KC_GRV,  KC_TILD, KC_TRNS, KC_TRNS, KC_BSLS,
+    KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,   KC_GRV,  KC_TILD, KC_TRNS, KC_PIPE, KC_BSLS,
     KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_BTN2,   KC_PLUS, KC_MINS, KC_SLSH, KC_ASTR, KC_QUOT,
     KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_BTN1,   KC_AMPR, KC_EQL,  KC_COMM, KC_DOT,  KC_MINS,
-    CMB_TOG, TO(FUNC), KC_EQL,             KC_EQL,  KC_SCLN, KC_DEL
+    CMB_TOG, TO(FUNC), TO(BASE),             KC_EQL,  KC_SCLN, KC_DEL
     ),
 
 
 // PL Number Layer
 
-/* Keymap 2: Num Pad/Function layer
+/* Keymap 2: Num Pad Layer
  * ,-----------------------------.       ,-------------------------------.
  * |  1   |  2  |  3  |  4  |  5  |      |  *  |  7  |  8  |  9  |   /   |
  * |-----+-----+-----+-----+------|      |-------------------------------|
@@ -89,14 +89,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |  F6  | F7  | F8  | F9  | F10 |      |VOLUP|  1  |  2  |  3  | VOLDN |
  * `------+-----+-----+------+----'      `-------------------------------'
  *          .-----------------.           .--------------.
- *          | F11 | F12|      |           | FUNC |  0  |.|
+ *          | F11 | F12| BASE |           | FUNC |  0  |.|
  *          '-----------------'           '--------------'
  */
 [NUMB] = LAYOUT_gergoplex(
     KC_1,  KC_2,  KC_3,  KC_4,  KC_5,		 		KC_PAST,  	KC_7, 	 KC_8, 		KC_9, 	 KC_PSLS,
     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,   		KC_PPLS, KC_4, KC_5,   KC_6, KC_PMNS,
     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,  		KC_VOLU, KC_1, KC_2, KC_3, KC_VOLD,
-    KC_F11,KC_F12,KC_TRNS,  	                        TO(FUNC),KC_0,KC_DOT
+    KC_F11,KC_F12, TO(BASE),  	                        TO(FUNC),KC_0,KC_DOT
 			  ),
 
 // PL Function Layer
@@ -110,14 +110,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |  F6  | F7  | F8  | F9  | F10 |      |MLFT |  1  |  2  |  3  | VOLDN |
  * `------+-----+-----+------+----'      `-------------------------------'
  *          .-----------------.           .--------------.
- *          | F11 | F12|      |           | FUNC |  0  |.|
+ *          | F11 | F12| BASE |           |    |  0  | . |
  *          '-----------------'           '--------------'
  */
 [FUNC] = LAYOUT_gergoplex(
     KC_1,  KC_2,  KC_3,  KC_4,  KC_5,		 		KC_PAST,  	KC_7, 	 KC_8, 		KC_9, 	 RESET,
     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,   		KC_PPLS, TO(PLVR), KC_5,   KC_6, KC_PMNS,
     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,  		KC_MS_L, KC_1, KC_2, KC_3, KC_VOLD,
-     						  KC_F11,KC_F12,KC_TRNS,  	KC_TRNS,KC_0,KC_DOT
+    KC_F11,KC_F12,TO(BASE),  	KC_TRNS,KC_0,KC_DOT
 			  ),
 
 // PL Function Layer
