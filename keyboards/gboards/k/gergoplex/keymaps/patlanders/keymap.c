@@ -15,7 +15,8 @@
 #define FUNC 3 // function / admin
 #define MOVE 4 // movement layer
 #define HTWM 5 // HHTWM layer
-#define PLVR 6 // plover
+#define PLVR 6 // plover layers
+
 
 /* Combomap
  *
@@ -162,7 +163,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_Q, KC_W, KC_E, KC_R, KC_T,   		KC_U, KC_I,   KC_O, KC_P, KC_LBRC,
     KC_A, KC_S, KC_D, KC_F, KC_G,  		KC_J, KC_K, KC_L, KC_SCLN,KC_QUOTE,
     TO(BASE), KC_C,KC_V,  	                       KC_N, KC_M, TO(BASE)
-			  )
+			  ),
 
 // PL HHTWM Layer
 
