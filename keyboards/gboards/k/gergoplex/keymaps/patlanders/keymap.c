@@ -179,7 +179,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *          |MMB | FUNC | BASE |           |  =  |  ;  |  DEL |
  *          '------------------'           '------------------'
  */
-[SYMB] = LAYOUT_gergoplex(
+[HTWM] = LAYOUT_gergoplex(
   LCAG(KC_QUOTE), LCAG(KC_COMMA), LCAG(KC_DOT), LCAG(KC_P), LCAG(KC_Y),   LCAG(KC_F),  LCAG(KC_G), LCAG(KC_C), LCAG(KC_R), LCAG(KC_L),
     LCAG(KC_A), LCAG(KC_O),  LCAG(KC_E), LCAG(KC_U), LCAG(KC_I), LCAG(KC_D), LCAG(KC_H), LCAG(KC_T), LCAG(KC_N), LCAG(KC_S),
     KC_NO, LCAG(KC_Q), LCAG(KC_J), LCAG(KC_K), LCAG(KC_X), LCAG(KC_B), LCAG(KC_M), LCAG(KC_W), LCAG(KC_V), LCAG(KC_Z),
