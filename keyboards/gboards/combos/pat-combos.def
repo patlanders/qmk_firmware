@@ -1,3 +1,11 @@
+#define BASE 0 // default layer
+#define SYMB 1 // symbols
+#define NUMB 2 // numbers/motion
+#define FUNC 3 // function / admin
+#define MOVE 4 // movement layer
+#define HTWM 5 // HHTWM layer
+#define PLVR 6 // plover
+
 // Vim-Mode combos
 
 COMB(kmRet,	 KC_ENT,          KC_K, KC_M)
@@ -9,4 +17,6 @@ COMB(hmScln,     KC_SCLN,         KC_H, KC_M)
 COMB(mwvUnd,     KC_UNDS,         KC_M, KC_W, KC_V)
 COMB(htnDash,    KC_MINS,         KC_H, KC_T, KC_N)
 COMB(hnEnt,      KC_ENT,          KC_H, KC_N)
+COMB(rlBsls,     KC_BSLASH,       KC_R, KC_L)
+COMB(hhtwm, TO(HTWM), KC_G, KC_C, KC_R, KC_L)
  

@@ -13,7 +13,9 @@
 #define SYMB 1 // symbols
 #define NUMB 2 // numbers/motion
 #define FUNC 3 // function / admin
-#define PLVR 4 // plover
+#define MOVE 4 // movement layer
+#define HTWM 5 // HHTWM layer
+#define PLVR 6 // plover
 
 /* Combomap
  *
@@ -89,14 +91,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |  F6  | F7  | F8  | F9  | F10 |      |VOLUP|  1  |  2  |  3  | VOLDN |
  * `------+-----+-----+------+----'      `-------------------------------'
  *          .-----------------.           .--------------.
- *          | F11 | F12| BASE |           | FUNC |  0  |.|
+ *          | MOVE | F12| BASE |           | FUNC |  0  |.|
  *          '-----------------'           '--------------'
  */
 [NUMB] = LAYOUT_gergoplex(
     KC_1,  KC_2,  KC_3,  KC_4,  KC_5,		 		KC_PAST,  	KC_7, 	 KC_8, 		KC_9, 	 KC_PSLS,
     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,   		KC_PPLS, KC_4, KC_5,   KC_6, KC_PMNS,
     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,  		KC_VOLU, KC_1, KC_2, KC_3, KC_VOLD,
-    KC_F11,KC_F12, TO(BASE),  	                        TO(FUNC),KC_0,KC_DOT
+    TO(MOVE),KC_F12, TO(BASE),  	                        TO(FUNC),KC_0,KC_DOT
 			  ),
 
 // PL Function Layer
@@ -122,7 +124,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // PL Function Layer
 
-/* Keymap 4: Plover layer
+/* Keymap 4: Movement layer
+ * ,-----------------------------.       ,-------------------------------.
+ * |  1   |  2  |  3  |  4  |  5  |      |  *  |  7  |  8  |  9  | RESET |
+ * |-----+-----+-----+-----+------|      |-------------------------------|
+ * |  F1  | F2  | F3  | F4  |  F5 |      |  +  | LFT | DWN | UP  |   RT  |
+ * |-----+-----+-----+-----+------+      |-------------------------------|
+ * |  F6  | F7  | F8  | F9  | F10 |      |MLFT |  HOM  |  PDW  |  PUP  | END |
+ * `------+-----+-----+------+----'      `-------------------------------'
+ *          .-----------------.           .--------------.
+ *          | F11 | F12| BASE |           |    |  0  | . |
+ *          '-----------------'           '--------------'
+ */
+[MOVE] = LAYOUT_gergoplex(
+    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,		 		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   		KC_NO_, KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT,
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,  		KC_NO, KC_HOME, KC_PGDOWN, KC_PGUP, KC_END,
+    KC_NO,KC_NO,TO(BASE),  	KC_NO,KC_NO,KC_NO
+			  ),
+
+// PL Function Layer
+
+/* Keymap 6: Plover layer
  * ,-----------------------------.      ,-------------------------------.
  * |  1  |  2  |  3  |  4  |  5  |      |  *  |  6  |  7  |  8  |   9   |
  * |-----+- ---+-----+-----+-----|      |-------------------------------|
@@ -141,3 +164,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TO(BASE), KC_C,KC_V,  	                       KC_N, KC_M, TO(BASE)
 			  )
 };
+
+// PL HHTWM Layer
+
+/* Keymap 5: HHTWM layer
+ * ,------------------------------.      ,--------------------------------.
+ * |  !  |  @  |  {  |  }  |  |   |      | `   |  ~  |     |  |  |    \   |
+ * |-----+-----+-----+-----+------|      |--------------------------------|
+ * |  #  |  $  |  (  |  )  |  LMB |      |  +  |  -  |  /  |  *  |    '   |
+ * |-----+-----+-----+-----+------+      |--------------------------------|
+ * |  %  |  ^  |  [  |  ]  |  RMB |      |  &  |  =  |  ,  |  .  |   -    |
+ * `------+-----+-----+------+----'      `--------------------------------'
+ *          .------------------.           .------------------.
+ *          |MMB | FUNC | BASE |           |  =  |  ;  |  DEL |
+ *          '------------------'           '------------------'
+ */
+[SYMB] = LAYOUT_gergoplex(
+  LCAG(KC_QUOTE), LCAG(KC_COMMA), LCAG(KC_DOT), LCAG(KC_P), LCAG(KC_Y),   LCAG(KC_F),  LCAG(KC_G), LCAG(KC_C), LCAG(KC_R), LCAG(KC_L),
+    LCAG(KC_A), LCAG(KC_O),  LCAG(KC_E), LCAG(KC_U), LCAG(KC_I), LCAG(KC_D), LCAG(KC_H), LCAG(KC_T), LCAG(KC_N), LCAG(KC_S),
+    KC_NO, LCAG(KC_Q), LCAG(KC_J), LCAG(KC_K), LCAG(KC_X), LCAG(KC_B), LCAG(KC_M), LCAG(KC_W), LCAG(KC_V), LCAG(KC_Z)n,
+    KC_NO, KC_NO, TO(BASE),             KC_NO,  KC_NO, KC_NO
+    ),
