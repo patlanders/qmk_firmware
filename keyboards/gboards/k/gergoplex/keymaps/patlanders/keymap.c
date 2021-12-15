@@ -138,7 +138,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [MOVE] = LAYOUT_gergoplex(
     KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,		 		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   		KC_NO_, KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT,
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   		KC_NO, KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT,
     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,  		KC_NO, KC_HOME, KC_PGDOWN, KC_PGUP, KC_END,
     KC_NO,KC_NO,TO(BASE),  	KC_NO,KC_NO,KC_NO
 			  ),
@@ -163,7 +163,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_A, KC_S, KC_D, KC_F, KC_G,  		KC_J, KC_K, KC_L, KC_SCLN,KC_QUOTE,
     TO(BASE), KC_C,KC_V,  	                       KC_N, KC_M, TO(BASE)
 			  )
-};
 
 // PL HHTWM Layer
 
@@ -184,4 +183,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LCAG(KC_A), LCAG(KC_O),  LCAG(KC_E), LCAG(KC_U), LCAG(KC_I), LCAG(KC_D), LCAG(KC_H), LCAG(KC_T), LCAG(KC_N), LCAG(KC_S),
     KC_NO, LCAG(KC_Q), LCAG(KC_J), LCAG(KC_K), LCAG(KC_X), LCAG(KC_B), LCAG(KC_M), LCAG(KC_W), LCAG(KC_V), LCAG(KC_Z)n,
     KC_NO, KC_NO, TO(BASE),             KC_NO,  KC_NO, KC_NO
-    ),
+    )
+};
