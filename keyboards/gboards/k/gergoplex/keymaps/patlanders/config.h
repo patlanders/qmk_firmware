@@ -1,3 +1,4 @@
 #define COMBO_ALLOW_ACTION_KEYS 
 #define COMBO_VARIABLE_LEN
+#undef FORCE_NKRO
 #define FORCE_NKRO
