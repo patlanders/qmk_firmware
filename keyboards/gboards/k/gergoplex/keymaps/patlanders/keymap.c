@@ -108,7 +108,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------.       ,-------------------------------.
  * |  1   |  2  |  3  |  4  |  5  |      |  *  |  7  |  8  |  9  | RESET |
  * |-----+-----+-----+-----+------|      |-------------------------------|
- * |  F1  | F2  | F3  | F4  |  F5 |      |  +  | PLV |  5  |  6  | HTWM  |
+ * |  F1  | F2  | F3  | F4  |NK_ON|      |  +  | PLV |  5  |  6  | HTWM  |
  * |-----+-----+-----+-----+------+      |-------------------------------|
  * |  F6  | F7  | F8  | F9  | F10 |      |MLFT |  1  |  2  |  3  | VOLDN |
  * `------+-----+-----+------+----'      `-------------------------------'
@@ -118,7 +118,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [FUNC] = LAYOUT_gergoplex(
     KC_1,  KC_2,  KC_3,  KC_4,  KC_5,		 		KC_PAST,  	KC_7, 	 KC_8, 		KC_9, 	 RESET,
-    KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,   		KC_PPLS, TO(PLVR), KC_5,   KC_6, TO(HTWM),
+    KC_F1, KC_F2, KC_F3, KC_F4, NK_ON,   		KC_PPLS, TO(PLVR), KC_5,   KC_6, TO(HTWM),
     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,  		KC_MS_L, KC_1, KC_2, KC_3, KC_VOLD,
     KC_F11,KC_F12,TO(BASE),  	KC_TRNS,KC_0,KC_DOT
 			  ),
