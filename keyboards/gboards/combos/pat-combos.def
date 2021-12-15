@@ -1,10 +1,3 @@
-#define BASE 0 // default layer
-#define SYMB 1 // symbols
-#define NUMB 2 // numbers/motion
-#define FUNC 3 // function / admin
-#define MOVE 4 // movement layer
-#define HTWM 5 // HHTWM layer
-#define PLVR 6 // plover
 
 // Vim-Mode combos
 
