@@ -129,7 +129,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------.       ,-------------------------------.
  * |  1   |  2  |  3  |  4  |  5  |      |  *  |  7  |  8  |  9  | RESET |
  * |-----+-----+-----+-----+------|      |-------------------------------|
- * |  F1  | F2  | F3  | F4  |  F5 |      |  +  | LFT | DWN | UP  |   RT  |
+ * |  ALF  | ADWN  | AUP  | ART |  F5 |      |  +  | LFT | DWN | UP  |   RT  |
  * |-----+-----+-----+-----+------+      |-------------------------------|
  * |  F6  | F7  | F8  | F9  | F10 |      |MLFT |  HOM  |  PDW  |  PUP  | END |
  * `------+-----+-----+------+----'      `-------------------------------'
@@ -139,8 +139,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [MOVE] = LAYOUT_gergoplex(
     KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,		 		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   		KC_NO, KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT,
-    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,  		KC_NO, KC_HOME, KC_PGDOWN, KC_PGUP, KC_END,
+    LALT(KC_LEFT), LALT(KC_DOWN), LALT(KC_UP), LALT(KC_RIGHT), KC_NO,   		KC_NO, KC_LEFT, KC_DOWN,   KC_UP, KC_RIGHT,
+    LGUI(KC_LEFT), LGUI(KC_DOWN), LGUI(KC_UP), LGUI(KC_RIGHT), KC_NO,  		KC_NO, KC_HOME, KC_PGDOWN, KC_PGUP, KC_END,
     KC_NO,KC_NO,TO(BASE),  	KC_NO,KC_NO,KC_NO
 			  ),
 

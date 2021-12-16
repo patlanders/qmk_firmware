@@ -1,4 +1,6 @@
+#define MOVE 4 // movement layer
 #define HTWM 5 // HHTWM layer
+
 
 // Vim-Mode combos
 
@@ -13,4 +15,5 @@ COMB(htnDash,    KC_MINS,         KC_H, KC_T, KC_N)
 COMB(hnEnt,      KC_ENT,          KC_H, KC_N)
 COMB(rlBsls,     KC_BSLASH,       KC_R, KC_L)
 COMB(hhtwm, TO(HTWM), KC_G, KC_C, KC_R, KC_L)
- 
+COMB(rtmvt, TO(MOVE), KC_B, KC_M, KC_W, KC_V)
+COMB(ltmvt, TO(MOVE), KC_X, KC_K, KC_J, KC_Q)
